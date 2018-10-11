@@ -28,6 +28,11 @@
 
 .the-video {
   padding-left: 170px;
+  padding-top: 4vh;
+}
+
+div.the-frame-work > h2 {
+  color: black;
 }
 
 .the-h1-main {
@@ -36,13 +41,14 @@
 }
 
 .for-signup {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.7);
   width: 40vw;
   float: right;
-  height: 50vh;
+  height: 55vh;
   position: fixed;
-  bottom: 30vh;
+  bottom: 20vh;
   left: 50vw;
+  border-radius: 10px;
 }
 
 
@@ -175,6 +181,7 @@ padding-top: 15px;
   background-position-y: -150px;
   background-size: cover;
   background-repeat: no-repeat;
+  /* background-attachment: fixed; */
 }
 
 .the-signup-thing {
@@ -233,10 +240,37 @@ img {
 
 
 .moving-the-top {
-    border: 4px solid white;
-    width: 550px;
-    background-color: gray;
+    /* border: 4px solid white; */
+    /* width: 550px; */
+    float: left;
+    background-color: rgba(0, 0, 0, 0);
+    /* margin-left: 447px; */
+    padding-left: 25vw;
+    padding-top: 4vh;
+
 }
+
+.profile-info{
+  color: white;
+  text-align: left;
+  padding-left: 45vw;
+  padding-top: 4vh;
+  padding-bottom: 120px;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 10px;
+  margin-right: 8vw;
+  margin-left: 16vw;
+  /* position: relative; */
+}
+
+.div.moving-the-top > img {
+  position: absolute;
+}
+
+
+/* .profile-and-image {
+
+} */
 
 div.field-details > a{
   text-decoration: none;
@@ -260,12 +294,17 @@ div.field-details > a{
   background-image: url('./images/action-aerial-athletes-1171084.jpg');
   height: 96vh;
   background-size: cover;
+  /* background-attachment: fixed; */
+
 }
 
 
 
 .change-the-color {
-  background-color: white;
+  background-image: url('./images/bleachers-chairs-empty-128432.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  /* opacity: 1.7; */
 }
 
 
@@ -322,4 +361,13 @@ label {
 .logo-left > img{
   width: 15vw;
   height: 11vh;
+}
+
+
+.the-frame-work > h1 {
+  background-color: rgba(0,0,0,0.7);
+  width: 400px;
+  color: white;
+  margin-left: 40vw;
+  border-radius: 10px;
 }

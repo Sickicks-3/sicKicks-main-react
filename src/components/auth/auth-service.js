@@ -12,9 +12,15 @@ class AuthService {
 
 
 
-signup = (username, password, firstName, lastName, email, avatar) => {
-    return this.service.post('/signup', {username, password, firstName, lastName, email, avatar})
+signup = (username, password, firstName, lastName, email) => {
+  // console.log("starting the sign up process from the auth service @@@@@@@@@@@@@@@@", username);
+  // console.log("starting the sign up process from the auth service @@@@@@@@@@@@@@@@", password);
+  // console.log("starting the sign up process from the auth service @@@@@@@@@@@@@@@@", firstName);
+  // console.log("starting the sign up process from the auth service @@@@@@@@@@@@@@@@", lastName);
+  // console.log("starting the sign up process from the auth service @@@@@@@@@@@@@@@@", email);
+    return this.service.post('/signup', {username, password, firstName, lastName, email})
     .then(response => {
+      console.log("info from sign up from the auth service file >>>>>>>>>>>> ", response.data);
       return response.data
     })
   }

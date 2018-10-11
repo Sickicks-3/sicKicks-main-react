@@ -90,7 +90,7 @@ class App extends Component {
           userInSession={this.state.loggedInUser}/>}
           />
           <Route exact path="/lobby" component={Lobby} />
-          <Route exact path="/signup" component={Signup} />
+          <Route exact path="/signup" {...this.props} component={Signup} />
           <Route exact path="/teams" component={Teams} />
           <Route exact path="/fields/:id" component={FieldDetails} />
           <Route exact path="/teams/:id" component={TeamDetails} />
